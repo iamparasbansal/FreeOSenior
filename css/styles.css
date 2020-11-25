@@ -101,9 +101,9 @@ h2
 {
     
     float:left;
-    height: 5rem;
+     height: 5rem;
     width: auto;
-    
+   
 }
 
 .collapse{
@@ -111,8 +111,10 @@ h2
 }
 .nav .nav-brand a{
     font-size: 1.6rem;
-    padding: 1rem 0;
-    display: block;
+    
+    display: flex;
+    justify-items: center;
+    align-items: center;
    font-family: var(--Abel);
     font-weight: bold;
     font-size: 1.6rem;
