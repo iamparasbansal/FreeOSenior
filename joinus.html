@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ask Queries</title>
+    <title>Join us</title>
     <!-- coustoms styles -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/all.css">
@@ -91,7 +91,7 @@
     </script>
     <style>
        
-       body
+        body
         {
              background:url("./images/Abract01.png") !important;
             background-size: cover !important;
@@ -101,10 +101,9 @@
             width:80%;
             margin:20vh auto;
             display: grid;
-           
+            grid-template-columns: 60% 20%;
              box-shadow: 20px 20px 5px skyblue;
             border-radius: 10px;
-            border: 2px solid skyblue;
             
             
         }
@@ -112,9 +111,6 @@
         .main{
           
             padding:20px;
-            height: 100%;
-
-            
             
         }
        
@@ -160,11 +156,6 @@
             width: 50%;
             height:30px;
         }
-        .maincontainer
-        {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-        }
         
 
     </style>
@@ -187,11 +178,12 @@
         </div>
         <div>
             <ul class="nav-items">
-                <li class="nav-link"><a href="index.html" >Home</a></li>
+                <li class="nav-link"><a href="index.html">Home</a></li>
                 <li class="nav-link"><a href="tutorial.html">Tutorials</a></li>
                 <li class="nav-link"><a href="ProjectNotes.html">Projects/Notes</a></li>
-                <li class="nav-link"><a href="./askquery2.html" class="active">Ask a Query</a></li>
-                <li class="nav-link"><a href="./askquery.html">login/Signup</a></li>
+                <li class="nav-link"><a href="./askquery.html" >Ask a Query</a></li>
+                <li class="nav-link"><a href="./joinus.html" class="active">join us
+                </a></li>
             </ul>
         </div>
         <div class="social text-grey">
@@ -200,118 +192,103 @@
         </div>
     </div>
 </nav>
+   
+  
 
-
-
-    <!-- queries  -->
-
-    
-  <div class="maincontainer">
-    <div class="outermain">
-        <div class="con" data-aos="flip-left" data-aos-delay="200" style="min-height: 300px;">
-    
-        </div>
-        
-        <div class="con" data-aos="flip-left" data-aos-delay="200" style="min-height: 300px;">
-    
-        </div>
-    
-        <!--xxxx queires xxxxx-->
-        <div class="con" data-aos="flip-left" data-aos-delay="200" style="min-height: 300px;">
-    
-        </div>
-
-        <div class="con" data-aos="flip-left" data-aos-delay="200" style="min-height: 300px;">
-    
-        </div>
-    
-        <!--xxxx queires xxxxx-->
-    
-    
-        <!-- ---------x-------navigation-------x------- -->
- 
-    </div>
+    <!-- ---------x-------navigation-------x------- -->
     <div class="con" data-aos="flip-left" data-aos-delay="200">
-    
+        
         <div class="main">
             <h2>
-                Ask Your Query
-    
+               Become Our Member
+
             </h2>
             <hr>
-            <div class="form">
-                <form target="_blank" method="POST"
-                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdCkzdbP02QLicfLXnntdAMfBl9x8L5zpCwYQFD4mC-E2x_hA/formResponse">
-                    <label data-aos="zoom-in" data-aos-delay="100" for="about">Write your query here👽</label>
+            <div class="form" >
+                <form  target="_blank" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdCkzdbP02QLicfLXnntdAMfBl9x8L5zpCwYQFD4mC-E2x_hA/formResponse">
+
+                    <label data-aos="zoom-in" data-aos-delay="100" for="Name" >Name</label><br>
+                    <input type="text" name="entry.1004453667" id="fname" placeholder="first name" required><br>
+                    <input type="text" name="entry.792656444" id="lname" placeholder="last name" required><br>
+                    <br>
                     <br><br>
-                    <textarea data-aos="zoom-in" data-aos-delay="100" name="entry.154368331" id="" cols="40"
-                        rows="10"></textarea>
+                    <label data-aos="zoom-in" data-aos-delay="100" for="subject">Year:</label>
+                    <br>
+                    
+                    <input type="radio" name="year" value="1" data-aos="zoom-in" data-aos-delay="100" onclick="YYY(this.value)"><span data-aos="zoom-in" data-aos-delay="100">Ist</span> <br>
+                    <input type="radio" name="year" value="2" data-aos="zoom-in" data-aos-delay="100" onclick="YYY(this.value)" ><span data-aos="zoom-in" data-aos-delay="100">IInd</span> <br>
+                    <input type="radio" name="year" value="3" data-aos="zoom-in" data-aos-delay="100" onclick="YYY(this.value)" ><span data-aos="zoom-in" data-aos-delay="100">IIIrd</span> <br>
+                    <input type="radio" name="year" value="4" data-aos="zoom-in" data-aos-delay="100"  onclick="YYY(this.value)"><span data-aos="zoom-in" data-aos-delay="100">IVth</span>  <br>
+                    <br><br>
+               
+                    <label data-aos="zoom-in" data-aos-delay="100" for="branch">Branch</label><br>
+                    <select name="aa" id="" onclick="BBB(this.value)" data-aos="zoom-in" data-aos-delay="100"  >
+                        <option value="computer science">computer science</option>
+                        <option value="information technology">Information Technology</option>
+                        <option value="Electronics and Communication">Electronics and Communicatino</option>
+                        <option value="mechnical">Mechanical Engineering</option>
+                        <option value="civil">Civil</option>
+                        <option value="electrical">Electrical</option>
+                        <option value="production">Production and Engineering</option>
+                        
+                       
+                    </select>
+                    <input type="hidden" name="entry.926856260" id="year" >
+                    <input type="hidden" name="entry.1310168918" value="CIVIL" id="branch">
+                    <input type="hidden" name="entry.1216582584" value="" id="intrest">
+                    <br>
+                    <br><br>
+                    <label data-aos="zoom-in" data-aos-delay="100" for="Email" >Email </label><br>
+                    <input type="text" class="email" data-aos="zoom-in" data-aos-delay="100" name="entry.882243583" required id="Email" onblur="em()"><br>
+                    <label data-aos="zoom-in" data-aos-delay="100" for="phone">Phone no</label><br>
+                    <input data-aos="zoom-in" data-aos-delay="100" type="text" name="entry.315579689" required name="phone" id="ph"onblur="pho()"><br>
                     <br>
                     <br>
-    
-                    <label data-aos="zoom-in" data-aos-delay="100" for="intrest">Query Tag :</label>
-                    <span data-aos="zoom-in" data-aos-delay="100">
-                        <br><input data-aos="zoom-in" onclick="III(this.value)" data-aos-delay="100" type="checkbox"
-                            name="int" value="sketching" id=""><span data-aos="zoom-in" data-aos-delay="100"> Competitve
-                            Programming</span>
-                        <br><input data-aos="zoom-in" onclick="III(this.value)" data-aos-delay="100" type="checkbox"
-                            name="int" value="painting" id=""> <span data-aos="zoom-in" data-aos-delay="100">IOT</span>
-                        <br><input data-aos="zoom-in" onclick="III(this.value)" data-aos-delay="100" type="checkbox"
-                            name="int" value="designing" id=""><span data-aos="zoom-in" data-aos-delay="100"> Android
-                            Development</span>
-                        <br><input data-aos="zoom-in" onclick="III(this.value)" data-aos-delay="100" type="checkbox"
-                            name="int" value="photography" id=""> <span data-aos="zoom-in" data-aos-delay="100">Machine
-                            Learning and AI</span>
-                        <br><input data-aos="zoom-in" onclick="III(this.value)" data-aos-delay="100" type="checkbox"
-                            name="int" value="decoration" id=""> <span data-aos="zoom-in" data-aos-delay="100">Web
-                            Development</span>
-                        <br><input data-aos="zoom-in" onclick="III(this.value)" data-aos-delay="100" type="checkbox"
-                            name="int" value="artcraft" id=""><span data-aos="zoom-in" data-aos-delay="100">Circuit
-                            Design</span>
-    
-                        <br><input data-aos="zoom-in" onclick="III(this.value)" data-aos-delay="100" type="checkbox"
-                            name="int" value="modeling" id=""> <span data-aos="zoom-in"
-                            data-aos-delay="100">Physics/Chemistry</span>
-    
-    
-                        <br><br>
-                        <label data-aos="zoom-in" data-aos-delay="100" for="subject">Year:</label>
-                        <br>
-    
-                        <input type="radio" name="year" value="1" data-aos="zoom-in" data-aos-delay="100"
-                            onclick="YYY(this.value)"><span data-aos="zoom-in" data-aos-delay="100">Fresher (1st)</span>
-                        <br>
-                        <input type="radio" name="year" value="2" data-aos="zoom-in" data-aos-delay="100"
-                            onclick="YYY(this.value)"><span data-aos="zoom-in" data-aos-delay="100">Sophomore
-                            (2nd)</span>
-                        <br>
-                        <input type="radio" name="year" value="3" data-aos="zoom-in" data-aos-delay="100"
-                            onclick="YYY(this.value)"><span data-aos="zoom-in" data-aos-delay="100">Pre-final
-                            (3rd)</span>
-                        <br>
-                        <input type="radio" name="year" value="4" data-aos="zoom-in" data-aos-delay="100"
-                            onclick="YYY(this.value)"><span data-aos="zoom-in" data-aos-delay="100">Final (4th)</span>
-                        <br>
-                        <br><br>
-    
-    
-                        <br>
-                        <br>
-                        <button class="btn" data-aos="zoom-in" data-aos-delay="100" type="submit">
-                            submit
-                        </button>
+                    <br>
+                    <label data-aos="zoom-in" data-aos-delay="100" for="intrest">Your Interests :</label>
+                <span data-aos="zoom-in" data-aos-delay="100">
+                    <br><input data-aos="zoom-in" onclick="III(this.value)" data-aos-delay="100" type="checkbox" name="int" value="sketching" id=""><span data-aos="zoom-in" data-aos-delay="100"> Competitve Programming</span>
+                    <br><input data-aos="zoom-in" onclick="III(this.value)" data-aos-delay="100" type="checkbox" name="int" value="painting" id=""> <span data-aos="zoom-in" data-aos-delay="100">IOT</span>
+                    <br><input data-aos="zoom-in" onclick="III(this.value)" data-aos-delay="100" type="checkbox" name="int" value="designing" id=""><span data-aos="zoom-in" data-aos-delay="100"> Android Development</span>
+                    <br><input data-aos="zoom-in"  onclick="III(this.value)"data-aos-delay="100" type="checkbox" name="int" value="photography" id=""> <span data-aos="zoom-in" data-aos-delay="100">Machine Learning and AI</span>
+                    <br><input data-aos="zoom-in" onclick="III(this.value)" data-aos-delay="100" type="checkbox" name="int" value="decoration" id=""> <span data-aos="zoom-in" data-aos-delay="100">Web Development</span>
+                    <br><input data-aos="zoom-in"  onclick="III(this.value)"data-aos-delay="100" type="checkbox" name="int" value="artcraft" id=""><span data-aos="zoom-in" data-aos-delay="100">Circuit Design</span>
+                    
+                    <br><input data-aos="zoom-in" onclick="III(this.value)" data-aos-delay="100" type="checkbox" name="int" value="modeling" id=""> <span data-aos="zoom-in" data-aos-delay="100">Physics/Chemistry</span>
+                    
+                   
+                    <br><br>
+
+
+
+                    <label data-aos="zoom-in" data-aos-delay="100" for="about">About Yourself</label>
+                    <br><br>
+                    <textarea data-aos="zoom-in" data-aos-delay="100" name="entry.154368331" id="" cols="40" rows="10"></textarea>
+                    <br>
+                    <br>
+                    <label data-aos="zoom-in" data-aos-delay="100" for="join">Why you wanted to Join Us</label>
+                    <br><br>
+                    <textarea data-aos="zoom-in" data-aos-delay="100" name="entry.1185114855" id="" cols="40" rows="10"></textarea>
+                    <br>
+                    <br>
+                    <button class="btn" data-aos="zoom-in" data-aos-delay="100"  type="submit">
+                        submit
+                    </button>
+                    <button class="btn" data-aos="zoom-in" data-aos-delay="100" type="reset">reset</button>
+                    
+
+
+
                 </form>
             </div>
-    
-    
+            
+
         </div>
-        <div class="marker" data-aos="fade-left" data-aos-delay="1000">
+        <div class="marker"  data-aos="fade-left" data-aos-delay="1000">
             <img src="./images/logo.png" alt="" width="100%">
-    
+        
         </div>
     </div>
-  </div>
-
 <footer class="footer">
     <div class="container">
         <div class="about-us">
