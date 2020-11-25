@@ -38,13 +38,6 @@ function hello()
     });
   }
 
-   function getimg()
-        {
-            var img=document.getElementById("profile");
-            img.src=googleUser.getBasicProfile().getImageUrl();
-
-        }
-
 function reset()
 {
   var x = document.getElementById("hell");
@@ -70,6 +63,7 @@ $(document).ready(function () {
   AOS.init();
   
 });
+
 $(function() {
     if (auth2.isSignedIn.get()) {
   var profile = auth2.currentUser.get().getBasicProfile();
@@ -81,6 +75,5 @@ $(function() {
   console.log('Email: ' + profile.getEmail());
   document.getElementById("after-login").style.display="flex";
   document.getElementById("before-login").style.display="none";
-
 }
 });
