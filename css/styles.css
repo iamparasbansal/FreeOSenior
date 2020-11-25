@@ -7,7 +7,6 @@
     --Lexend:'Lexend_Deca',cursive;
     --Livvic:'Livvic',cursive;
 
-
     --text-grey:#3f4954;
     --text-light:rgba(102, 136, 102, 0.714);
     --bg-color:#0f0f0f;
@@ -23,7 +22,6 @@ html,body{
     box-sizing: border-box;
     overflow-x: hidden;
 }
-
 
 /* #####global class### */
 a{
@@ -78,7 +76,6 @@ h2
 
 }
 
-
 /* navbar */
 
 .what
@@ -98,8 +95,6 @@ h2
     backface-visibility: none;
     z-index: 9;
 
-  
-    
 }
 
 .logo
@@ -119,9 +114,6 @@ h2
     font-size: 1.6rem;
     float:left;
     
-    
-    
-
     /* text-decoration: none; */
 }
 
@@ -208,7 +200,6 @@ h2
 
 /* site title */
 
-
 .cover .site-title
 {
     height:55vw;
@@ -243,7 +234,6 @@ h1,h3{
     display: block;
     font-size:3.5vw;
     
-    
 }
 .amazing
 {
@@ -268,7 +258,6 @@ main .site-background .btn:hover
     color: white;
 }
 
-
 main .art{
     background: url('../images/Abract01.png');
     background-repeat: no-repeat;
@@ -279,8 +268,6 @@ main .art{
     background-blend-mode: var(--white);
     background-size:cover;
 }
-
-
 
 main .art-post
 {
@@ -294,7 +281,7 @@ main .art-post .art-content
     flex-direction: column;
     text-align: center;
     width: 80%;
-    height: auto;
+    height: 30rem;
     margin:3rem 2rem;
     box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.726);
 }
@@ -327,7 +314,6 @@ section .container .owl-nav
     margin: 0px auto;
     width:100%;
     
-
 }
 .owl-navigation
 {
@@ -441,7 +427,6 @@ main .post-content .post-title .post-btn
     background-color: skyblue;
 }
 
-
 /* main sectin close */
 /* footer section  */
 /* footer section xxxxx */
@@ -464,18 +449,17 @@ footer.footer .container> div{
 }
 footer.footer .container h2
 {
-    color:rgb(255, 255, 255);
+    color:white;
 }
 footer.footer .container 
 {
-    color: white;
-    font-size: small;
+    color:var(--text-grey)
 }
 footer.footer .container .form-element input
 {
     padding:.5rem 1rem;
     border:none;
-    width:74%;
+    widht:74%;
 }
 footer.footer .container .form-element button
 {
@@ -484,10 +468,13 @@ footer.footer .container .form-element button
     padding: .6rem 1rem;
     
 }
-footer.container .contributors
+footer.footer .instagram div>img
 {
-    font-size: 10;
-    margin:10;
+    display:inline-block;
+    width:25%;
+    height:50%;
+    overflow: hidden;
+    margin:.5rem;
 }
 
 footer.footer .follow i
@@ -515,10 +502,6 @@ footer.footer .rights a
     color: white;
 }
 
-
-
-
-
 .blur
 {
     position: fixed;
@@ -545,8 +528,6 @@ footer.footer .rights a
     height:auto;
     margin:10px auto;
 
-    
-    
 }
 .close
 {
@@ -592,7 +573,6 @@ footer.footer .rights a
 .loader
 {
     width:90%;
-   
    
 }
 .login
@@ -688,9 +668,6 @@ border-radius: 2px;
 color: black;
 }
 
-
-
-
 /* media query */
 @media screen and ( max-width:1000px )
 {
@@ -726,9 +703,6 @@ color: black;
     footer.footer .container
     {grid-template-columns: 100%}
 
-    
-  
-    
 main .site-title h1,h3{
     margin: 1.4rem;
     font-size: 2.5rem;
@@ -766,8 +740,6 @@ main .site-title h1,h3{
     
 }
 
-    
-
 }
 
 input.email
@@ -781,7 +753,5 @@ input.email
     left: 0;
     backface-visibility: visible;
     pointer-events: none;
-    
-
     
 }
