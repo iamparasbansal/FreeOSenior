@@ -55,7 +55,7 @@ $(document).ready(function () {
   );
 
   AOS.init();
-  $('img[usemap]').rwdImageMaps();
+  
 
 
 
