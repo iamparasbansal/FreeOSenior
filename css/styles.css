@@ -464,17 +464,18 @@ footer.footer .container> div{
 }
 footer.footer .container h2
 {
-    color:white;
+    color:rgb(255, 255, 255);
 }
 footer.footer .container 
 {
-    color:var(--text-grey)
+    color: white;
+    font-size: small;
 }
 footer.footer .container .form-element input
 {
     padding:.5rem 1rem;
     border:none;
-    widht:74%;
+    width:74%;
 }
 footer.footer .container .form-element button
 {
@@ -483,13 +484,10 @@ footer.footer .container .form-element button
     padding: .6rem 1rem;
     
 }
-footer.footer .instagram div>img
+footer.container .contributors
 {
-    display:inline-block;
-    width:25%;
-    height:50%;
-    overflow: hidden;
-    margin:.5rem;
+    font-size: 10;
+    margin:10;
 }
 
 footer.footer .follow i
