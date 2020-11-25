@@ -101,6 +101,9 @@ h2
 {
     
     float:left;
+    height: 5rem;
+    width: auto;
+    
 }
 
 .collapse{
