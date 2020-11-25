@@ -12,21 +12,20 @@ p
     width:95%;
     margin:40px auto;
     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-columns: 1fr 1fr  1fr;
 }
 .box{
      padding: 20px;
     border-radius: 5px;
     transform: initial;
     transition: 0.7s transform;
-     margin: 0;
+     margin: 10px auto;
     overflow: hidden;
      height:20vw;
-     width: 20vw;
+     width: 90%;
    
-
 }
-.box img
+.box iframe
 {
    width: 100%;
    height: 100%;
@@ -62,8 +61,6 @@ body
     background-size: cover !important;
 }
 
-
-
 hr{
     
     box-shadow: 10px 5px 5px skyblue;
@@ -74,13 +71,7 @@ hr{
 #popi
 {
     
-
 }
-
-
-
-
-
 
 @media  screen and  ( max-width:840px )
 {
@@ -94,8 +85,6 @@ hr{
      width: 25vw !important;
      margin: 0 auto;
      
-   
-
 }
 }
 @media  screen and  ( max-width:640px )
@@ -105,8 +94,6 @@ hr{
         width: 25vw !important;
     }
 }
-
-
 
 @media  screen and  ( max-width:520px )
 {
