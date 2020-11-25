@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
+    <meta name="google-signin-client_id" content="171445230502-c0eu9t0e1ii1mthljtp1cjgo35o3esqu.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     
     <script>
         function chet(chetan) {
@@ -30,6 +32,12 @@
                 var p = document.getElementById('popi');
                 p.src = chetan;
             }
+        function getimg()
+        {
+            var img=document.getElementById("profile");
+            img.src=googleUser.getBasicProfile().get();
+
+        }
     </script>
 
     <style>
@@ -90,7 +98,15 @@
                 </div>
                 <div class="social text-grey">
         
-                    <a href="javascript:showlogin()"><i class="fa fa-user" aria-hidden="true"></i></a>
+                   <div style="display: flex;">
+                        <a href="javascript:showlogin()">
+                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                        </a>
+                        
+                        <img src="./images/" height="32px" width="32px" alt="" id="profile">
+                        
+                        <a href="#" onclick="signOut();">Sign out</a>
+                   </div>
                 </div>
             </div>
         </nav>
@@ -244,21 +260,21 @@
 
         <div class="cont" >
             <div class="card" data-aos="zoom-in" style="width: 18rem;">
-            <img class="card-img-top" src="./images/ClassNotes.jpg" alt="Card image cap"><div class="card-body">
+            <img class="card-img-top" src="./images/cyber-security.jpg" alt="Card image cap"><div class="card-body">
             <h5 class="card-title">Cyber Security</h5>
             <p class="card-text">Click the link below to get access to previous years notes</p>
             <a href="https://drive.google.com/file/d/18IwqGnb8ovh9kkygCO_z-KHFbD4jGMx1/view?usp=sharing" target="_blank" class="btn btn-primary">Cyber Security</a>
             </div>
             </div>
             <div class="card" data-aos="zoom-in" style="width: 18rem;">
-            <img class="card-img-top" src="./images/ClassNotes.jpg" alt="Card image cap"><div class="card-body">
+            <img class="card-img-top" src="./images/industry.jpg" alt="Card image cap"><div class="card-body">
             <h5 class="card-title">Industry Experience</h5>
             <p class="card-text">Click the link below to get access to previous years notes</p>
             <a href="https://drive.google.com/file/d/18IwqGnb8ovh9kkygCO_z-KHFbD4jGMx1/view?usp=sharing" target="_blank" class="btn btn-primary">Industry Experience</a>
             </div>
             </div>
             <div class="card" data-aos="zoom-in" style="width: 18rem;">
-            <img class="card-img-top" src="./images/ClassNotes.jpg" alt="Card image cap"><div class="card-body">
+            <img class="card-img-top" src="./images/corporate.png" alt="Card image cap"><div class="card-body">
             <h5 class="card-title">Carporate</h5>
             <p class="card-text">Click the link below to get access to previous years notes</p>
             <a href="https://drive.google.com/file/d/18IwqGnb8ovh9kkygCO_z-KHFbD4jGMx1/view?usp=sharing" target="_blank" class="btn btn-primary">Carporate</a>
