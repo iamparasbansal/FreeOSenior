@@ -3,7 +3,6 @@ $(window).load(function () {
   $("#load").fadeOut("slow");;
 });
 
-
 const res ={
   0:
   {items:1},
@@ -14,11 +13,6 @@ const res ={
   960:
   {items:3}
 }
-
-
-
-
-
 
 function hello() 
 {
@@ -34,12 +28,9 @@ function reset()
   var x = document.getElementById("hell");
   x.className = "nav";
   
-
 }
 
-
 $(document).ready(function () {
-
 
   $('.owl-carousel').owlCarousel(
     {
@@ -54,11 +45,8 @@ $(document).ready(function () {
     }
   );
 
-  AOS.init();
   
 
-
-
-
+  AOS.init();
+  
 });
-

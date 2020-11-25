@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreeOSenior</title>
-
+    <meta name="google-signin-client_id" content="171445230502-c0eu9t0e1ii1mthljtp1cjgo35o3esqu.apps.googleusercontent.com">
     <!-- coustoms styles -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/all.css">
@@ -18,7 +18,19 @@
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/jquery.rwdImageMaps.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
 
+        
+
+        function onSignIn(googleUser) {l̥ō
+                var profile = googleUser.getBasicProfile();
+                console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                console.log('Name: ' + profile.getName());
+                console.log('Image URL: ' + profile.getImageUrl());
+                console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+            }
+    </script>
     
     
 </head>
@@ -30,7 +42,11 @@
         <div class="nav-menu flex-row">
             <div class="nav-brand">
                 
+<<<<<<< HEAD
                 <a href="./index.html" class="text-grey bold"><img class="logo" src="./images/logo.png" width="50px"  alt="">FreeOSenior<span class="red"> </span></a>
+=======
+                <a href="./index.html" class="text-grey bold"><img class="logo" src="./images/logo.png" alt="">FreeOSenior<span class="red"> </span></a>
+>>>>>>> dbf3288e0e0db55b0d9f417cadea5cedb62d40a3
                 
             </div>
             <div class="toggle-collapse">
@@ -49,7 +65,7 @@
             </div>
             <div class="social text-grey">
                 
-            <a href="javascript:showlogin()"><i class="fa fa-user" aria-hidden="true"></i></a>
+            <a href="javascript:showlogin()"><div class="g-signin2" data-onsuccess="onSignIn"></div></a>
             </div>
         </div>
     </nav>
@@ -76,7 +92,7 @@
         <div class="site-background"  >
             
             <div class="amazing">
-                <h1 data-aos="fade-down" data-aos-delay="3000">A Group of Amazing Peoples</h1>
+                <h1 data-aos="fade-down" data-aos-delay="1000">A Group of Amazing Peoples</h1>
             </div>
             <div>
                 <img src="./images/Background-image.jpg" alt="">
@@ -263,9 +279,9 @@
                             <img class="img" src="./images/art-post/art-5.jpg" alt="">
                         </div>
                         <div class="post-info flex-row">
-                            <span><i class="fas fa-user text-gray"></i> &nbsp;&nbsp;Admin&nbsp;&nbsp;</span>
+                            <span><i class="fas fa-user text-gray"></i> &nbsp;&nbsp;Nitish Bansal&nbsp;&nbsp;</span>
                             <span>&nbsp;&nbsp;Data Science</span>
-                            <span>Research
+                            <span>12 Dec 13:00
                             </span>
                         </div>
                     </div>
@@ -281,12 +297,12 @@
                 <div class="post-content"  data-aos="fade-down-right" data-aos-delay="100">
                     <div class="post-image">
                      <div>
-                         <img class="img" src="./images/art-post/art-3.jpeg" alt="">
+                         <img class="img" src="./images/art-post/art-3.png" alt="">
                      </div>
                      <div class="post-info flex-row">
-                         <span><i class="fas fa-user text-gray"></i> &nbsp;&nbsp;Admin&nbsp;&nbsp;</span>
-                         <span>&nbsp;&nbsp;Neural Networks</span>
-                         <span>Deep Learning
+                         <span><i class="fas fa-user text-gray"></i> &nbsp;&nbsp;Deepak Garg&nbsp;&nbsp;</span>
+                         <span>&nbsp;&nbsp;Neural Networks & Deep Learning</span>
+                         <span>12 Dec 16:00
                          </span>
                      </div>
                     </div>
@@ -306,9 +322,9 @@
                          <img class="img" src="./images/art-post/art-4.jpeg" alt="">
                      </div>
                      <div class="post-info flex-row">
-                         <span><i class="fas fa-user text-gray"></i> &nbsp;&nbsp;Admin&nbsp;&nbsp;</span>
+                         <span><i class="fas fa-user text-gray"></i> &nbsp;&nbsp;Anurag Basu&nbsp;&nbsp;</span>
                          <span>&nbsp;&nbsp;AI | ML</span>
-                         <span>Technology
+                         <span>13 Dec 13:00
                          </span>
                      </div>
                     </div>
@@ -329,7 +345,7 @@
                     <ul class="list">
 
                         <li class="list-items" data-aos="flip-left" data-aos-delay="300" >
-                            <a href="#">Ayush Verma</a>
+                            <a href="#">Ayush Mittal</a>
                             <span>(56)</span>
                         </li>
                         <li class="list-items"data-aos="flip-left" data-aos-delay="300" >
@@ -350,7 +366,7 @@
                         </li>
                         <li class="list-items"data-aos="flip-left" data-aos-delay="300" >
                             <a href="#">Abhishek Sharma</a>
-                            <span>(25)</span>
+                            <span>(05)</span>
                         </li>
                     </ul>
                 </div>

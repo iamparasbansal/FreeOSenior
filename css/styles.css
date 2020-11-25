@@ -84,7 +84,7 @@ h2
     font-size: 5rem !important;
 }
 
-.nav{
+.nav,.navigation{
     background-color: white;
     padding: 0 1vw;
     height: 80px;
@@ -101,7 +101,13 @@ h2
 {
     
     float:left;
+<<<<<<< HEAD
    
+=======
+    height: 5rem;
+    width: auto;
+    
+>>>>>>> dbf3288e0e0db55b0d9f417cadea5cedb62d40a3
 }
 
 .collapse{
