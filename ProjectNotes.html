@@ -32,6 +32,12 @@
                 var p = document.getElementById('popi');
                 p.src = chetan;
             }
+        function getimg()
+        {
+            var img=document.getElementById("profile");
+            img.src=googleUser.getBasicProfile().get();
+
+        }
     </script>
 
     <style>
@@ -92,9 +98,15 @@
                 </div>
                 <div class="social text-grey">
         
-                    <a href="javascript:showlogin()"><div class="g-signin2" data-onsuccess="onSignIn"></div></a>
-
-                    <a href="#" onclick="signOut();">Sign out</a>
+                   <div style="display: flex;">
+                        <a href="javascript:showlogin()">
+                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                        </a>
+                        
+                        <img src="./images/" height="32px" width="32px" alt="" id="profile">
+                        
+                        <a href="#" onclick="signOut();">Sign out</a>
+                   </div>
                 </div>
             </div>
         </nav>

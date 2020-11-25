@@ -29,6 +29,7 @@ function hello()
                 console.log('Name: ' + profile.getName());
                 console.log('Image URL: ' + profile.getImageUrl());
                 console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+                getimg();
             }
   function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
@@ -36,6 +37,13 @@ function hello()
       console.log('User signed out.');
     });
   }
+
+   function getimg()
+        {
+            var img=document.getElementById("profile");
+            img.src=googleUser.getBasicProfile().getImageUrl();
+
+        }
 
 function reset()
 {
