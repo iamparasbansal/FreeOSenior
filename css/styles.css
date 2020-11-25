@@ -84,7 +84,7 @@ h2
     font-size: 5rem !important;
 }
 
-.nav{
+.nav,.navigation{
     background-color: white;
     padding: 0 1vw;
     height: 80px;
