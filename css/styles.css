@@ -87,7 +87,7 @@ h2
 .nav{
     background-color: white;
     padding: 0 1vw;
-    height: 70px;
+    height: 80px;
     overflow: hidden;
     box-shadow: 0px 7px 20px skyblue !important ;
     position: fixed; 
@@ -99,6 +99,7 @@ h2
 
 .logo
 {
+    
     float:left;
 }
 
