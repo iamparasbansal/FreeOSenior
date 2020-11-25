@@ -4,7 +4,6 @@
     box-shadow: none !important;
     z-index: 99;
     
-    
 }
 
 ::-webkit-scrollbar
@@ -91,7 +90,6 @@ body
     background-color: black !important;
 }
 
-
 .nav .nav-menu a
 {
     color: white !important;
@@ -104,12 +102,9 @@ body
     width: auto;
     background-color: black;
     
-    
     pointer-events: none;
 
 }
-
-
 
 .nav .nav-menu
 {
@@ -131,8 +126,6 @@ body
     
 }
 
-
-
 body
 {
     background-color:transparent;
@@ -145,8 +138,6 @@ body
     background-position: center;
     background-attachment: fixed;
 
-
-  
     background:transparent;
     
 }
@@ -168,7 +159,6 @@ body
     align-items: center;
     align-self: center;
     line-height: 9rem;
-    
     
 }
 .name h3
@@ -204,9 +194,6 @@ body
     border: 1px solid grey;
     border-radius: 30px;
 
-    
-    
-    
 }
 .services h3
 {
@@ -233,10 +220,8 @@ body
 .art
 {
     
-    
     margin:20px;
 }
-
 
 .Masonary .art:nth-child(1)
 {
@@ -268,16 +253,11 @@ body
     margin: 20px;
 }
 
-
-
-
-
 img
 {
     border-radius: 5%;
     width: 100%;
 }
-
 
 .btn
 {
@@ -305,12 +285,6 @@ img
     width: 70%;
 }
 
-
-
-
-
-
-
 footer.footer .label
 {
     color: grey;
@@ -321,12 +295,10 @@ footer.footer .label
     
 }
 
-
 footer.footer .container .mysocial 
 {
     display: grid;
     justify-content: center;
-    
     
 }.loader-back
 {
@@ -342,16 +314,11 @@ footer.footer .container .mysocial
     z-index: 100;
 }
 
-
-
-
 footer.footer .mysocial i
 {
     font-size:5rem ;
     color: grey;
 }
-
-
 
 @media screen and ( max-width:900px)
 {
