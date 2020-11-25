@@ -1,0 +1,382 @@
+.nav 
+{
+    background-color: black;
+    box-shadow: none !important;
+    z-index: 99;
+    
+    
+}
+
+::-webkit-scrollbar
+        {
+            width: 0;
+        }
+        #scroll
+        {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.05);
+
+        }
+        #progress
+        {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 20px;
+            
+            background: linear-gradient(to top,#008aff,#00ffe7);
+            animation: animate 5s linear infinite;
+          
+        }
+        @keyframes animate
+        {
+            0%,100%
+            {
+                filter:hue-rotate(0deg);
+            }
+            50%
+            {
+                filter: hue-rotate(360deg);
+            }
+        }
+        #progress:before
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top,#008aff,#00ffe7);
+            filter: blur(10px);
+        }
+        #progress::after
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top,#008aff,#00ffe7);
+            filter: blur(10px);
+        }
+
+*
+{
+    color: grey !important;
+    margin:0 ;
+    padding: 0;
+    scroll-behavior: smooth;;
+    
+    text-align: center;
+    
+}
+.container
+{
+    width: 80%;
+    margin:0 auto;
+    margin-top:20px !important;
+}
+p,pre
+{
+    font-size: 1.5rem;
+}
+body
+{
+    background-color: black !important;
+}
+
+
+.nav .nav-menu a
+{
+    color: white !important;
+    padding: 0;
+}
+.nav-brand img
+
+{
+    height: 70px;
+    width: auto;
+    background-color: black;
+    
+    
+    pointer-events: none;
+
+}
+
+
+
+.nav .nav-menu
+{
+    color: white;
+}
+.container
+{
+    color: grey;
+      margin-top: 100px !important;
+    text-align: center;
+    min-height: 400px;
+}
+#particles-js
+{
+    background-color:transparent !important;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    
+}
+
+
+
+body
+{
+    background-color:transparent;
+}
+
+.home
+{
+    display: grid;
+    background: url("../ch.jpg") ;
+    background-position: center;
+    background-attachment: fixed;
+
+
+  
+    background:transparent;
+    
+}
+.name
+{
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+   
+}
+.name h1
+{
+    font-size: 8rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    line-height: 9rem;
+    
+    
+}
+.name h3
+{
+    font-size: 6vw;
+    text-emphasis:bold;
+     display: flex;
+     padding:0;
+     margin:0 auto;
+    align-items: center;
+    align-self: center;
+}
+
+.services
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.service
+{
+    
+    min-width: 300px;
+    margin: 20px ;
+    min-height: 300px;
+    font-size: 2rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid grey;
+    border-radius: 30px;
+
+    
+    
+    
+}
+.services h3
+{
+    font-size: 2rem;
+}
+.service i
+{
+    margin-top:10px;
+    font-size: 4rem;
+}
+.Masonary
+{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    margin:40px;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    grid-template-rows: minmax(200px,1fr);
+    grid-auto-flow: dense;
+    justify-content: center;
+    align-items: center;
+
+}
+.art
+{
+    
+    
+    margin:20px;
+}
+
+
+.Masonary .art:nth-child(1)
+{
+    grid-column: span 2;
+}
+.Masonary .art:nth-child(2)
+{
+    grid-column: span 2;
+}
+.Masonary .art:nth-child(4)
+{
+    grid-column: span 2;
+}
+.Masonary .art:nth-child(5)
+{
+    grid-column: span 2;
+}
+.Masonary .art:nth-child(8)
+{
+    grid-column: span 2;
+}
+.project
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.art-post
+{
+    margin: 20px;
+}
+
+
+
+
+
+img
+{
+    border-radius: 5%;
+    width: 100%;
+}
+
+
+.btn
+{
+    background-color: transparent !important;
+    padding: 20px ;
+    border: 2px gray solid !important;
+}
+.contact input ,.contact textarea
+{
+    width: 60%;
+    margin: 20px;
+    background-color: transparent !important;
+    border: 1px solid grey;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-align: left;
+    font-family: 'Abel';
+}
+.contact input
+{
+    height: 50px;
+}
+.contact .btn
+{
+    width: 70%;
+}
+
+
+
+
+
+
+
+footer.footer .label
+{
+    color: grey;
+    font-size: 2vw;
+    display: block;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+footer.footer .container .mysocial 
+{
+    display: grid;
+    justify-content: center;
+    
+    
+}.loader-back
+{
+    position: fixed;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    z-index: 100;
+}
+
+
+
+
+footer.footer .mysocial i
+{
+    font-size:5rem ;
+    color: grey;
+}
+
+
+
+@media screen and ( max-width:900px)
+{
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+.nav .toggle-collapse .toggle-icons
+{
+    
+    display: flex;
+
+}
+.services
+{
+    grid-template-columns: 1fr;
+    font-size: 3rem;
+}
+.project
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.name h1
+{
+    font-size: 4.5rem !important;
+    line-height: 4.5rem !important;
+}
+}
