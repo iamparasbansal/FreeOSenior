@@ -98,14 +98,19 @@
                 </div>
                 <div class="social text-grey">
         
-                   <div style="display: flex;">
-                        <a href="javascript:showlogin()">
-                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                        </a>
+                   <div >
+
+
                         
-                        <img src="./images/" height="32px" width="32px" alt="" id="profile">
+                        <div class="g-signin2" data-onsuccess="onSignIn" id="befor-login"></div>
+                       
+                        <div id="after-login">
+                            <img src="./images/instagram/unnamed.png" height="32px" width="32px" alt="" id="profile">
+                            <br>
+                            
+                            <a href="#" onclick="signOut();">Sign out</a>
+                        </div>
                         
-                        <a href="#" onclick="signOut();">Sign out</a>
                    </div>
                 </div>
             </div>

@@ -105,6 +105,21 @@ h2
     width: auto;
    
 }
+#after-login
+{
+   
+    align-items:center;
+    border: 1px solid black;
+    padding: 10px;
+    display: none;
+
+}
+#after-login img
+{
+    border-radius: 32px;
+    margin: 0 20px;
+
+}
 
 .collapse{
     height: auto;
